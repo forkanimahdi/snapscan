@@ -29,7 +29,7 @@ export default function ScanScreen() {
             permission.granted ? setScanner(true) : requestPermission()
           }}
           className="w-4/5 h-[40%] items-center justify-center border border-dashed border-white">
-
+ 
           {
             scanner ?
               <CameraView onBarcodeScanned={(response)=>{console.log(response.data); setScanner(false)}} className="w-full h-full">

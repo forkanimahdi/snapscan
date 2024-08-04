@@ -10,17 +10,21 @@ import {
   Dimensions,
   TextInput,
   BackHandler,
+
 } from "react-native";
+import QRCode from "react-native-qrcode-svg";
 
 
 export default function HomeScreen() {
-  return (
-    <>
-    <View className="bg-alpha h-screen items-center justify-center">
-      <Text className="text-white text-xl">Hello and welcome  to your project</Text>
-    </View>
 
-    </>
+
+  const [qrCodeUrl, setQRCodeUrl] = useState(null);
+
+  return (
+    <View className="bg-alpha h-screen items-center justify-center">
+      <Text>jhdc</Text>
+
+    </View>
   );
 }
 

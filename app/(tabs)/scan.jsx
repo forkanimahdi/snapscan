@@ -22,17 +22,18 @@ export default function ScanScreen() {
 
   return (
     <>
-      <View className="bg-alpha h-screen flex-col items-center justify-center">
+      <View onlo onTouchStart={()=>{setScanner(false)}} className="bg-alpha h-screen flex-col items-center justify-center">
 
         <Pressable
           onLongPress={() => {
             permission.granted ? setScanner(true) : requestPermission()
           }}
+          onLayout={()=>{(console.log("n"))}}
           className="w-4/5 h-[40%] items-center justify-center border border-dashed border-white">
- 
+
           {
             scanner ?
-              <CameraView onBarcodeScanned={(response)=>{console.log(response.data); setScanner(false)}} className="w-full h-full">
+              <CameraView onBarcodeScanned={(response) => { console.log(response.data); setScanner(false) }} className="w-full h-full">
 
               </CameraView>
 

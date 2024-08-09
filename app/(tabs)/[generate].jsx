@@ -30,7 +30,6 @@ export default function ScanScreen() {
             case "text":
 
                 return setQrData(data)
-                break;
             case "number":
                 console.log("number here");
 

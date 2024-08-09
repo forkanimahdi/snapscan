@@ -19,11 +19,11 @@ export default function TabLayout() {
           backgroundColor: "#1f2d3a",
           borderBlockColor: "#1f2d3a",
           height: 55
-          
+
         }
 
       }}>
-      
+
       <Tabs.Screen
         name="home"
         options={{
@@ -66,8 +66,8 @@ export default function TabLayout() {
 
 
 
-      {/* {[
-
+      {[
+        "[generate]",
 
 
       ].map((pathname, index) => (
@@ -78,7 +78,7 @@ export default function TabLayout() {
             href: null,
           }}
         />
-      ))} */}
+      ))}
 
     </Tabs>
   );
